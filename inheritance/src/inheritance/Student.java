@@ -2,6 +2,7 @@ package inheritance;
 
 
 public class Student extends User{
+	private int userId;
 	private String firstName;
 	private String lastName;
 	private int birthYear;
@@ -11,11 +12,19 @@ public class Student extends User{
 		
 	}
 
-	public Student(int id,String firstName, String lastName, int birthYear, String email, String password) {
-		super(id,email,password);
+	public Student(int userId,String firstName, String lastName, int birthYear, String email, String password) {
+		super(userId,email,password);
 		this.firstName = firstName;
 		this.lastName = lastName;
 		this.birthYear = birthYear;
+	}
+
+	public int getUserId() {
+		return userId;
+	}
+
+	public void setUserId(int userId) {
+		this.userId = userId;
 	}
 
 	public String getFirstName() {

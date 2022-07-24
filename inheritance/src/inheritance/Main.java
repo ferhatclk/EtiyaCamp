@@ -8,7 +8,7 @@ public class Main {
 		Student student2 = new Student(2,"Selim","KAYGISIZ",1989,"selim@email.com","67891");
 		
 		Instructor instructor1 = new Instructor(1,"Engin","DEMÝROÐ",1988,"engindemirog@email.com","12398");
-
+		
 		StudentManager studentManager = new StudentManager();
 		studentManager.add(student1);
 		studentManager.add(student2);
@@ -22,10 +22,7 @@ public class Main {
 		
 		InstructorManager instructorManager = new InstructorManager();
 		instructorManager.add(instructor1);
-		
-		for(User instructor: instructorManager.getAll()) {
-			System.out.println(instructor.getEmail());
-		}
+		instructorManager.addHomework("User, Instructor, Student nesnelerini modelleyiniz. (Class-Inheritance)");
 		
 
 	}

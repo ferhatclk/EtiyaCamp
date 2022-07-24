@@ -3,7 +3,7 @@ package inheritance;
 
 public class InstructorManager extends UserManager{
 
-	public void addLesson(Instructor instructor, String lesson) {
-		System.out.println(instructor.getFirstName() + " : " + lesson + " eklendi.");
+	public void addHomework(String homework) {
+		System.out.println("ÖDEV : " + homework );
 	}
 }
